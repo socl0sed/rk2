@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -17,6 +16,9 @@ jobs:
 
     - name: Install dependencies
       run: sudo apt-get install -y cmake
+
+    - name: Clean previous build
+      run: rm -rf build
 
     - name: Create build directory
       run: mkdir build
@@ -29,8 +31,12 @@ jobs:
       working-directory: ./build
       run: make
 
+    - name: Run tests
+      working-directory: ./build
+      run: ./CompositePatternTestTests
+
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: my-artifact
-        path: ./build/MyExecutable
+        path: ./build/CompositePatternTest
