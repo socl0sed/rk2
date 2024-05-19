@@ -16,7 +16,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_executable(CompositePatternTestTest main.cpp leaf.cpp composite.cpp composite_test.cpp)
+add_executable(CompositePatternTestTest leaf.cpp composite.cpp composite_test.cpp)
 target_link_libraries(CompositePatternTestTest gtest gtest_main)
 
 
