@@ -33,7 +33,7 @@ jobs:
 
     - name: Run tests
       working-directory: ./build
-      run: ./CompositePatternTestTests
+      run: ./CompositePatternTestTest
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
