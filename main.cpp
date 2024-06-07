@@ -1,5 +1,4 @@
-#include "leaf.h"
-#include "composite.h"
+#include "classes.h"
 
 int main() {
     Leaf* leaf = new Leaf();

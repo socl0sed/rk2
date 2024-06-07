@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CompositePatternTestTest.dir/classes.cpp.o CMakeFiles/CompositePatternTestTest.dir/composite_test.cpp.o -o CompositePatternTestTest  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a 

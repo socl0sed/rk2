@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.4)
 project(MyRk)
 
 # Указываем исходные файлы
-set(SOURCE_FILES CompositePattern.cpp CompositePattern.vcxproj CompositePattern.vcxproj.filters)
+set(SOURCE_FILES CompositePattern.cpp classes.cpp)
 
 # Добавляем исполняемый файл
 add_executable(MyExecutable ${SOURCE_FILES})
@@ -16,7 +16,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_executable(CompositePatternTestTest leaf.cpp composite.cpp composite_test.cpp)
+add_executable(CompositePatternTestTest classes.cpp composite_test.cpp)
 target_link_libraries(CompositePatternTestTest gtest gtest_main)
 
 

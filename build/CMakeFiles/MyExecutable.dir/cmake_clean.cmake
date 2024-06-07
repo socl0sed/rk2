@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MyExecutable.dir/CompositePattern.cpp.o"
   "CMakeFiles/MyExecutable.dir/CompositePattern.cpp.o.d"
+  "CMakeFiles/MyExecutable.dir/classes.cpp.o"
+  "CMakeFiles/MyExecutable.dir/classes.cpp.o.d"
   "MyExecutable"
   "MyExecutable.pdb"
 )

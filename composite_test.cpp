@@ -1,7 +1,6 @@
 // composite_test.cpp
 #include <gtest/gtest.h>
-#include "composite.h"
-#include "leaf.h"
+#include "classes.h"
 
 TEST(CompositeTest, AddComponent) {
     Composite composite;
