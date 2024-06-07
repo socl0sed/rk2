@@ -35,6 +35,10 @@ jobs:
       working-directory: ./build
       run: ./CompositePatternTestTest
 
+    - name: Run MyExecutable
+      working-directory: ./build
+      run: ./MyExecutable
+
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
